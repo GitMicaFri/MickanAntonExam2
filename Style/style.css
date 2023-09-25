@@ -3,6 +3,7 @@
 :root {
   --baseFont: "Fira Sans", sans-serif;
   --headerFont: "Frank Ruhl Libre", serif;
+  --blueBackground: #c7ddea;
 }
 
 *,
@@ -24,6 +25,7 @@ body {
     "header header header header header header"
     "topnav topnav topnav topnav topnav topnav"
     "main main main main main main"
+    "howto howto howto howto howto howto"
     "botnav botnav botnav botnav botnav botnav"
     "footer footer footer footer footer footer";
 }
@@ -52,7 +54,7 @@ header article {
 }
 
 header > article:nth-child(1) {
-  background-color: #c7ddea;
+  background-color: var(--blueBackground);
   grid-column: span 3;
   grid-row: span 2;
   overflow-y: hidden;
@@ -156,4 +158,28 @@ footer {
 
 .whiteText {
   color: white;
+}
+
+.how-to-do {
+  display: grid;
+  grid-area: howto;
+  grid-template-columns: repeat(6, 10.4167rem);
+  grid-template-rows: auto;
+}
+
+.how-to-do > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-column: span 2;
+  height: 21.25rem;
+}
+
+.how-to-do section:nth-child(1) {
+  background-color: var(--blueBackground);
+  text-align: center;
+  font-size: 2.813rem;
+  letter-spacing: -2%;
+  line-height: 100%;
 }
