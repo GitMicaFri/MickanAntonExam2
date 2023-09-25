@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EBEBEB;
+    width: 62.5rem;
+    margin: auto;
+}
+
+header, main, footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 4rem;
+}
+
+header >article:nth-child(1) {
+    background-color: #C7DDEA;
+    grid-column: span 3;
+}
+
+header >article:nth-child(2) {
+    background-color: #F17949;
+    grid-column: span 3;
+}
+
+header >article:nth-child(3) {
+    background-color: #FFB939;
+    grid-column: span 3;
+}
