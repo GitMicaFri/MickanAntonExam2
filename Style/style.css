@@ -10,6 +10,7 @@ body {
     background-color: #EBEBEB;
     width: 62.5rem;
     margin: auto;
+    color: white;
 }
 
 header, main, footer {
