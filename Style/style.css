@@ -198,8 +198,8 @@ nav ul {
   align-items: center;
 }
 
-ul li:nth-child(n + 1) {
-  grid-column-start: calc(n+2);
+ul li:nth-child(1) {
+  grid-column-start: 2;
 }
 
 ul li a {
