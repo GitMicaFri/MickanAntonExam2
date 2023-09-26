@@ -87,17 +87,18 @@ header > article:nth-child(1) {
   padding-left: 6.5rem;
 }
 
-header > article:nth-child(2) {
-  background-color: #f17949;
+header > article:nth-child(n + 2) {
   grid-column: span 3;
   height: 17rem;
+  flex-direction: column-reverse;
+}
+
+header > article:nth-child(2) {
+  background-color: #f17949;
 }
 
 header > article:nth-child(3) {
   background-color: #ffb939;
-  grid-column: span 3;
-  flex-direction: column-reverse;
-  height: 17rem;
 }
 
 header article:nth-child(n + 2) p {
