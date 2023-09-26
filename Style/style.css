@@ -225,8 +225,6 @@ ul li a {
 
 /* How It Works - Section styling */
 
-/* Answer a few questions about yourself */
-
 .how-to-do {
   display: grid;
   grid-area: howto;
