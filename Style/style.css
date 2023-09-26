@@ -32,6 +32,10 @@ html {
   font-family: var(--headerFont);
 }
 
+.whiteText {
+  color: white;
+}
+
 /* Positioning and page-size */
 
 body {
@@ -133,21 +137,6 @@ header article:nth-child(n + 2) h2 {
   left: 6rem;
 }
 
-.btn-small {
-  width: 8.188rem;
-  height: 2.438rem;
-  border-radius: 6.25rem;
-  border: none;
-  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.btn-small > span {
-  font-family: var(--baseFont);
-  font-size: 0.625rem;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 900;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .bigHeaderbox a {
   position: relative;
   top: 7.2rem;
@@ -163,6 +152,7 @@ header article:nth-child(n + 2) h2 {
   padding-top: 3.9rem;
   padding-left: 0.2rem;
 }
+
 .bigHeaderbox span {
   font-family: var(--baseFont);
   font-size: 0.875rem;
@@ -173,8 +163,26 @@ header article:nth-child(n + 2) h2 {
   padding-left: 0.2rem;
 }
 
-.whiteText {
-  color: white;
+.btn-small {
+  width: 8.188rem;
+  height: 2.438rem;
+  border-radius: 6.25rem;
+  border: none;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-small > span {
+  font-family: var(--baseFont);
+  font-size: 0.625rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main section .btn-small > span {
+  font-family: var(--baseFont);
+  font-size: 0.625rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 900;
+  text-shadow: none;
 }
 
 /* Navbar topside-page */
@@ -184,14 +192,16 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 nav ul {
   list-style: none;
   align-items: center;
 }
 
 ul li:nth-child(n + 1) {
-  grid-column-start: calc(n+1);
+  grid-column-start: calc(n+2);
 }
+
 ul li a {
   text-decoration: none;
   color: #000000;
@@ -207,6 +217,7 @@ ul li a {
   align-items: center;
   justify-content: center;
 }
+
 li a:hover {
   opacity: 100%;
 }
@@ -249,6 +260,7 @@ li a:hover {
   height: 6.313rem;
   width: 19.625rem;
 }
+
 .how-to-do section:nth-child(n + 2) > h3 {
   height: 6.25rem;
   width: 6.25rem;
@@ -261,6 +273,7 @@ li a:hover {
   letter-spacing: -2%;
   color: #0000003f;
 }
+
 .how-to-do section:nth-child(n + 2) > .breadText {
   display: flex;
   align-items: center;
