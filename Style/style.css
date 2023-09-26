@@ -20,6 +20,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .breadText {
   font-family: var(--baseFont);
@@ -272,6 +275,34 @@ li a:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
+/* Navbar bottompage */
+
+.botnav {
+  background-color: var(--greyBackground);
+  height: 4.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.botnav a {
+  height: 2rem;
+  width: 2rem;
+}
+
+.botnav p {
+  height: 1.938rem;
+  width: 15.938rem;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 1.063rem;
+  font-weight: 500;
+}
+
+footer {
+  height: 21.25rem;
+  background-color: #777574;
+}
+
 /***********Mickan*****************/
 .grey {
   grid-column: span 6;
@@ -286,10 +317,6 @@ li a:hover {
   background-color: var(--orangeBackground);
   display: flex;
   justify-content: center;
-}
-
-h2 {
-  color: white;
 }
 
 .children,
