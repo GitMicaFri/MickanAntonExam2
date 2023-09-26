@@ -275,7 +275,7 @@ li a:hover {
   font-size: 2.1888rem;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #0000003f;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .how-to-do section:nth-child(n + 2) > .breadText {
