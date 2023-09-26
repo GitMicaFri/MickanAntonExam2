@@ -10,6 +10,7 @@
   --pageBackground: #ebebeb;
   --orangeBackground: #f17949;
   --yellowBackground: #ffb939;
+  --greyBackground: #a9a19e;
 }
 
 *,
@@ -275,14 +276,14 @@ li a:hover {
 .grey {
   grid-column: span 6;
   height: 30rem;
-  background-color: #a9a19e;
+  background-color: var(--greyBackground);
   display: flex;
 }
 
 .orange {
   grid-column: span 6;
   height: 30rem;
-  background-color: #fab131;
+  background-color: var(--orangeBackground);
   display: flex;
   justify-content: center;
 }
