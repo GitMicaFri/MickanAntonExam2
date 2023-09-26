@@ -1,10 +1,10 @@
 /* Utilities */
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Frank+Ruhl+Libre:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap");
 
 :root {
-  --baseFont: "Fira Sans", sans-serif;
-  --headerFont: "Frank Ruhl Libre", serif;
+  --baseFont: "Fira Sans";
+  --headerFont: "Frank Ruhl Libre";
   --blueBackground: #c7ddea;
   --whiteBackground: #ffffff;
   --pageBackground: #ebebeb;
@@ -29,7 +29,7 @@ html {
 }
 
 .headerText {
-  font-family: var(--headerFont);
+  font-family: "Frank Ruhl Libre";
 }
 
 .whiteText {
@@ -123,7 +123,7 @@ header article:nth-child(n + 2) p {
 
 header article:nth-child(n + 2) h2 {
   font-size: 2rem;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   width: 15.625rem;
   text-align: center;
   height: 2.563rem;
@@ -148,7 +148,7 @@ header article:nth-child(n + 2) h2 {
   height: 6.313rem;
   font-weight: 900;
   line-height: 100%;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   padding-top: 3.9rem;
   padding-left: 0.2rem;
 }
@@ -170,6 +170,7 @@ header article:nth-child(n + 2) h2 {
   border: none;
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
+
 .btn-small > span {
   font-family: var(--baseFont);
   font-size: 0.625rem;
@@ -177,6 +178,7 @@ header article:nth-child(n + 2) h2 {
   font-weight: 900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 main section .btn-small > span {
   font-family: var(--baseFont);
   font-size: 0.625rem;
@@ -207,7 +209,7 @@ ul li a {
   color: #000000;
   font-size: 0.75rem;
   line-height: 100%;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   font-weight: 600;
   opacity: 40%;
   transition-duration: 0.4s;
@@ -223,6 +225,8 @@ li a:hover {
 }
 
 /* How It Works - Section styling */
+
+/* Answer a few questions about yourself */
 
 .how-to-do {
   display: grid;
@@ -254,7 +258,7 @@ li a:hover {
 
 .how-to-do section:nth-child(1) > h2 {
   font-size: 2.813rem;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   line-height: 100%;
   text-align: center;
   height: 6.313rem;
@@ -270,7 +274,7 @@ li a:hover {
   position: absolute;
   font-size: 2.1888rem;
   line-height: 100%;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   color: #0000003f;
 }
 
@@ -295,11 +299,25 @@ li a:hover {
   height: 4.25rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
 .botnav a {
+  position: absolute;
   height: 2rem;
   width: 2rem;
+  position: absolute;
+  top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getUpBtn {
+  height: 1rem;
+  width: 2rem;
+  object-fit: contain;
 }
 
 .botnav p {
@@ -309,6 +327,7 @@ li a:hover {
   line-height: 1.25rem;
   font-size: 1.063rem;
   font-weight: 500;
+  margin-top: 1.2rem;
 }
 
 footer {
