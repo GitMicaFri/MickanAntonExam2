@@ -24,6 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Typography */
 .breadText {
   font-family: var(--baseFont);
 }
@@ -37,7 +38,6 @@ html {
 }
 
 /* Positioning and page-size */
-
 body {
   margin: 0 auto;
   background-color: var(--pageBackground);
@@ -72,7 +72,7 @@ header {
 main {
   grid-area: main;
 }
-.lastnav {
+.botnav {
   grid-area: botnav;
 }
 footer {
