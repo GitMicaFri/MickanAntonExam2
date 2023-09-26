@@ -47,7 +47,8 @@ body {
 
 header,
 main,
-footer {
+footer,
+nav ul {
   display: grid;
   grid-template-columns: repeat(6, 10.4167rem);
 }
@@ -169,6 +170,40 @@ header article:nth-child(n + 2) h2 {
   color: white;
 }
 
+/* Navbar topside-page */
+nav {
+  display: flex;
+  height: 4.25rem;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  align-items: center;
+}
+
+ul li:nth-child(n + 1) {
+  grid-column-start: calc(n+1);
+}
+ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.75rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  font-weight: 600;
+  opacity: 40%;
+  transition-duration: 0.4s;
+  height: 3.563rem;
+  width: 10.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li a:hover {
+  opacity: 100%;
+}
+
 /* How It Works - Section styling */
 
 .how-to-do {
@@ -187,12 +222,8 @@ header article:nth-child(n + 2) h2 {
 
 .how-to-do section:nth-child(1) {
   background-color: var(--blueBackground);
-  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: 2.813rem;
-  letter-spacing: -2%;
-  line-height: 100%;
 }
 
 .how-to-do section:nth-child(3) {
@@ -203,6 +234,14 @@ header article:nth-child(n + 2) h2 {
   background-color: #f17949;
 }
 
+.how-to-do section:nth-child(1) > h2 {
+  font-size: 2.813rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  text-align: center;
+  height: 6.313rem;
+  width: 19.625rem;
+}
 .how-to-do section:nth-child(n + 2) > h3 {
   height: 6.25rem;
   width: 6.25rem;
