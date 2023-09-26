@@ -55,14 +55,6 @@ header >article:nth-child(3) {
  h2 {
     color: white;
  }
- 
- p {
-    color: black;
- }
-
- .btn-small {
-    background-color: white;
- }
 
  .children, justright, oldfart {
     height: 8rem;
