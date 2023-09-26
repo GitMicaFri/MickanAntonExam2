@@ -8,6 +8,8 @@
   --blueBackground: #c7ddea;
   --whiteBackground: #ffffff;
   --pageBackground: #ebebeb;
+  --orangeBackground: #f17949;
+  --yellowBackground: #ffb939;
 }
 
 *,
@@ -94,11 +96,11 @@ header > article:nth-child(n + 2) {
 }
 
 header > article:nth-child(2) {
-  background-color: #f17949;
+  background-color: var(--orangeBackground);
 }
 
 header > article:nth-child(3) {
-  background-color: #ffb939;
+  background-color: var(--yellowBackground);
 }
 
 header article:nth-child(n + 2) p {
