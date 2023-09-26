@@ -212,7 +212,6 @@ ul li a {
   letter-spacing: -0.02em;
   font-weight: 600;
   opacity: 40%;
-  transition-duration: 0.4s;
   height: 3.563rem;
   width: 10.438rem;
   display: flex;
@@ -220,7 +219,7 @@ ul li a {
   justify-content: center;
 }
 
-li a:hover {
+#active {
   opacity: 100%;
 }
 
