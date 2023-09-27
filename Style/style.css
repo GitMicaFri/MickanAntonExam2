@@ -403,13 +403,24 @@ footer {
   overflow-y: hidden;
 }
 
-.profilecard:nth-of-child(1) .picbackground {
+.picBackground.child {
   background-color: var(--blueBackground);
 }
 
+.picBackground.adult {
+  background-color: var(--yellowBackground);
+}
+
+.picBackground.old {
+  background-color: var(--orangeBackground);
+}
 .profileCard h4 {
   width: 12.375rem;
   height: 0.8125rem;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .profilecard p {
   font-size: 0.6875rem;
@@ -421,14 +432,14 @@ footer {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.child {
+.profilePic.child {
   width: 13.375rem;
 }
 
-.adult {
+.profilePic.adult {
   width: 13.625rem;
 }
 
-.old {
+.profilePic.old {
   width: 13.125rem;
 }
