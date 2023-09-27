@@ -327,32 +327,50 @@ footer {
 .main-area {
     display: grid;
     grid-template-areas: 
-    "grey-le grey-le grey-le grey-ri grey-ri grey-ri"
+    "grey grey grey grey grey grey"
     "oran oran oran oran oran oran";
 }
 
-.grey-left {
-  grid-area: grey-le;
+.grey {
+  grid-area: grey;
   height: 30rem;
   background-color: var(--greyBackground);
   display: flex;
   padding: 2rem;
+  justify-content: space-evenly;
+  align-items:center;
+
 }
 
-
-.grey-right {
-    grid-area: grey-ri;
-    height: 30rem;
-    background-color: var(--greyBackground);
-  }
-
-  .join-now-main {
-    margin: 2rem;
-  }
-
-.grey-text-right {
-    margin: 4rem; 
+.grey >p {
+  height: 14.8125rem;
+  width: 17.5rem;
 }
+
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapper >h2 {
+  width: 19.625rem;
+  height: 8.75rem;
+  font-size: 2.8125rem;
+  line-height: 2.8125rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 4rem;
+}
+
+.grey-text {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  width: 280px;
+  height: 237px;
+}
+
 
 .orange {
   grid-area: oran;
