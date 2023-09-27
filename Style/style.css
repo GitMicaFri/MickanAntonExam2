@@ -10,6 +10,7 @@
   --orangeBackground: #f17949;
   --yellowBackground: #ffb939;
   --greyBackground: #a9a19e;
+  --fireyellowBackground: #fab131;
 }
 
 *,
@@ -240,7 +241,7 @@ ul li a {
 }
 
 .how-to-do section:nth-child(5) {
-  background-color: #f17949;
+  background-color: var(--orangeBackground);
 }
 
 .how-to-do section:nth-child(1) > h2 {
@@ -405,7 +406,7 @@ figure.profileCard {
 }
 
 .picBackground.adult {
-  background-color: var(--yellowBackground);
+  background-color: var(--fireyellowBackground);
 }
 
 .profilePic.adult {
@@ -448,7 +449,7 @@ figure.profileCard {
 .orange {
   grid-area: oran;
   height: 38.25rem;
-  background-color: var(--yellowBackground);
+  background-color: var(--fireyellowBackground);
   display: flex;
   flex-direction: column;
   align-items: center;
