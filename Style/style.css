@@ -424,7 +424,7 @@ figure.profileCard {
   height: 22.13125rem;
 }
 
-.profileCard h4 {
+.profileCard figcaption h4 {
   width: 12.375rem;
   height: 0.8125rem;
   color: rgba(0, 0, 0, 0.9);
@@ -434,7 +434,7 @@ figure.profileCard {
   text-align: center;
   margin-top: 1.4375rem;
 }
-.profileCard p {
+.profileCard figcaption p {
   font-size: 0.6875rem;
   font-weight: 700;
   line-height: 1.125rem;
