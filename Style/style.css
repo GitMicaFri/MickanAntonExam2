@@ -339,7 +339,7 @@ footer {
   padding: 6.4375rem 2rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  position: relative;
 }
 
 .wrapper {
@@ -354,7 +354,7 @@ footer {
   font-size: 2.8125rem;
   line-height: 2.8125rem;
   letter-spacing: -0.02em;
-  margin-bottom: 4rem;
+  margin-bottom: 3.625rem;
 }
 
 .grey-text {
@@ -364,13 +364,11 @@ footer {
   color: rgba(0, 0, 0, 0.6);
   height: 14.8125rem;
   width: 17.5rem;
-  position: relative;
 }
 
 .pictureFrame {
   margin-top: 7.0625rem;
   display: flex;
-  position: relative;
   gap: 1.6875rem;
   justify-content: center;
 }
@@ -382,8 +380,6 @@ figure.profileCard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  position: relative;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -402,12 +398,30 @@ figure.profileCard {
   background-color: var(--blueBackground);
 }
 
+.profilePic.child {
+  margin-top: 0.688125rem;
+  width: 6.02625rem;
+  height: 10.124375rem;
+}
+
 .picBackground.adult {
   background-color: var(--yellowBackground);
 }
 
+.profilePic.adult {
+  margin-top: 0.875rem;
+  width: 6.485625rem;
+  height: 27.0625rem;
+}
+
 .picBackground.old {
   background-color: var(--orangeBackground);
+}
+
+.profilePic.old {
+  margin-top: 1.5rem;
+  width: 8.3475rem;
+  height: 22.13125rem;
 }
 
 .profileCard h4 {
@@ -429,24 +443,6 @@ figure.profileCard {
   width: 13.375rem;
   color: rgba(0, 0, 0, 0.4);
   margin-top: 0.8125rem;
-}
-
-.profilePic.child {
-  margin-top: 0.688125rem;
-  width: 6.02625rem;
-  height: 10.124375rem;
-}
-
-.profilePic.adult {
-  margin-top: 0.875rem;
-  width: 6.485625rem;
-  height: 27.0625rem;
-}
-
-.profilePic.old {
-  margin-top: 1.5rem;
-  width: 8.3475rem;
-  height: 22.13125rem;
 }
 
 .orange {
