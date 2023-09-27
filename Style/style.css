@@ -336,9 +336,9 @@ footer {
   height: 38.25rem;
   background-color: var(--greyBackground);
   display: flex;
-  padding: 6.4375rem 2rem;
+  padding: 6.4375rem 6.6875rem;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
 }
 
