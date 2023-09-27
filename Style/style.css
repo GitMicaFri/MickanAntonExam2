@@ -273,28 +273,58 @@ li a:hover {
 }
 
 /***********Mickan*****************/
-.grey {
-  grid-column: span 6;
+.main-area {
+    display: grid;
+    grid-template-areas: 
+    "grey-le grey-le grey-le grey-ri grey-ri grey-ri"
+    "oran oran oran oran oran oran";
+}
+
+.grey-left {
+  grid-area: grey-le;
   height: 30rem;
   background-color: var(--greyBackground);
   display: flex;
+  padding: 2rem;
+}
+
+
+.grey-right {
+    grid-area: grey-ri;
+    height: 30rem;
+    background-color: var(--greyBackground);
+  }
+
+  .join-now-main {
+    margin: 2rem;
+  }
+
+.grey-text-right {
+    margin: 4rem; 
 }
 
 .orange {
-  grid-column: span 6;
+  grid-area: oran;
   height: 30rem;
   background-color: var(--orangeBackground);
   display: flex;
   justify-content: center;
 }
 
+.about-us {
+  padding-top: 5rem;
+}
+
+
+.orange-text {
+    margin: 4rem 8rem;
+}
+
 h2 {
   color: white;
 }
 
-.children,
-justright,
-oldfart {
+.child, justright, oldfart {
   height: 8rem;
   width: auto;
 }
