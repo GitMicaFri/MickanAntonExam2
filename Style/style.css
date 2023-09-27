@@ -333,17 +333,13 @@ footer {
 
 .grey {
   grid-area: grey;
-  height: 30rem;
+  height: 38.25rem;
   background-color: var(--greyBackground);
   display: flex;
-  padding: 2rem;
+  padding: 6.4375rem 2rem;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.grey > p {
-  height: 14.8125rem;
-  width: 17.5rem;
 }
 
 .wrapper {
@@ -366,34 +362,29 @@ footer {
   line-height: 1.5rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
-  width: 280px;
-  height: 237px;
+  height: 14.8125rem;
+  width: 17.5rem;
+  position: relative;
 }
 
-.orange {
-  grid-area: oran;
-  height: 30rem;
-  background-color: var(--orangeBackground);
+.pictureFrame {
+  margin-top: 7.0625rem;
   display: flex;
+  position: relative;
+  gap: 1.6875rem;
   justify-content: center;
 }
-
-.about-us {
-  padding-top: 5rem;
-}
-
-.orange-text {
-  margin: 4rem 8rem;
-}
-
-.profilecard {
+figure.profileCard {
   height: 19.25rem;
-  width: 16.125rem;
+  width: 16rem;
   background-color: white;
   border-radius: 0.3125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .picBackground {
@@ -401,6 +392,10 @@ footer {
   height: 9.375rem;
   border-radius: 0.25rem;
   overflow-y: hidden;
+  position: relative;
+  margin-top: -1.625rem;
+  display: flex;
+  justify-content: center;
 }
 
 .picBackground.child {
@@ -414,6 +409,7 @@ footer {
 .picBackground.old {
   background-color: var(--orangeBackground);
 }
+
 .profileCard h4 {
   width: 12.375rem;
   height: 0.8125rem;
@@ -421,8 +417,10 @@ footer {
   line-height: 1.25rem;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
+  margin-top: 1.4375rem;
 }
-.profilecard p {
+.profileCard p {
   font-size: 0.6875rem;
   font-weight: 700;
   line-height: 1.125rem;
@@ -430,16 +428,39 @@ footer {
   height: 6.75rem;
   width: 13.375rem;
   color: rgba(0, 0, 0, 0.4);
+  margin-top: 0.8125rem;
 }
 
 .profilePic.child {
-  width: 13.375rem;
+  margin-top: 0.688125rem;
+  width: 6.02625rem;
+  height: 10.124375rem;
 }
 
 .profilePic.adult {
-  width: 13.625rem;
+  margin-top: 0.875rem;
+  width: 6.485625rem;
+  height: 27.0625rem;
 }
 
 .profilePic.old {
-  width: 13.125rem;
+  margin-top: 1.5rem;
+  width: 8.3475rem;
+  height: 22.13125rem;
+}
+
+.orange {
+  grid-area: oran;
+  height: 38.25rem;
+  background-color: var(--orangeBackground);
+  display: flex;
+  justify-content: center;
+}
+
+.about-us {
+  padding-top: 5rem;
+}
+
+.orange-text {
+  margin: 4rem 8rem;
 }
