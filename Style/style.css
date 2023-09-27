@@ -325,8 +325,8 @@ footer {
 
 /***********Mickan*****************/
 .main-area {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  grid-template-areas:
     "grey grey grey grey grey grey"
     "oran oran oran oran oran oran";
 }
@@ -338,22 +338,21 @@ footer {
   display: flex;
   padding: 2rem;
   justify-content: space-evenly;
-  align-items:center;
-
+  align-items: center;
 }
 
-.grey >p {
+.grey > p {
   height: 14.8125rem;
   width: 17.5rem;
 }
 
 .wrapper {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.wrapper >h2 {
+.wrapper > h2 {
   width: 19.625rem;
   height: 8.75rem;
   font-size: 2.8125rem;
@@ -371,7 +370,6 @@ footer {
   height: 237px;
 }
 
-
 .orange {
   grid-area: oran;
   height: 30rem;
@@ -384,12 +382,53 @@ footer {
   padding-top: 5rem;
 }
 
-
 .orange-text {
-    margin: 4rem 8rem;
+  margin: 4rem 8rem;
 }
 
-.child, .justright, .oldfart {
-  height: 8rem;
-  width: auto;
+.profilecard {
+  height: 19.25rem;
+  width: 16.125rem;
+  background-color: white;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picBackground {
+  width: 14.75rem;
+  height: 9.375rem;
+  border-radius: 0.25rem;
+  overflow-y: hidden;
+}
+
+.profilecard:nth-of-child(1) .picbackground {
+  background-color: var(--blueBackground);
+}
+
+.profileCard h4 {
+  width: 12.375rem;
+  height: 0.8125rem;
+}
+.profilecard p {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  text-align: center;
+  height: 6.75rem;
+  width: 13.375rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.child {
+  width: 13.375rem;
+}
+
+.adult {
+  width: 13.625rem;
+}
+
+.old {
+  width: 13.125rem;
 }
