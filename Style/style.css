@@ -371,7 +371,7 @@ footer {
     margin: 4rem 8rem;
 }
 
-.child, justright, oldfart {
+.child, .justright, .oldfart {
   height: 8rem;
   width: auto;
 }
