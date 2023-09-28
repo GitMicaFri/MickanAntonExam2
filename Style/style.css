@@ -43,15 +43,15 @@ body {
   max-width: 62.5rem;
   justify-content: center;
   display: grid;
-  grid-template-columns: 62.5rem;
+  grid-template-columns: repeat(6, 10.4167rem);
   grid-auto-rows: auto;
   grid-template-areas:
-    "header"
-    "topnav"
-    "main"
-    "howto"
-    "botnav"
-    "footer";
+    "header header header header header header"
+    "topnav topnav topnav topnav topnav topnav"
+    "main main main main main main"
+    "howto howto howto howto howto howto"
+    "botnav botnav botnav botnav botnav botnav"
+    "footer footer footer footer footer footer";
 }
 
 header,
