@@ -336,21 +336,22 @@ footer {
   height: 38.25rem;
   background-color: var(--greyBackground);
   display: flex;
+  flex-wrap: wrap;
   padding: 2rem;
   justify-content: space-evenly;
-  align-items:center;
-
 }
 
 .grey >p {
   height: 14.8125rem;
   width: 17.5rem;
+  margin-top: 6.438rem;
 }
 
 .wrapper {
   display:flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 6.438rem;
 }
 
 .wrapper >h2 {
@@ -359,7 +360,7 @@ footer {
   font-size: 2.8125rem;
   line-height: 2.8125rem;
   letter-spacing: -0.02em;
-  margin-bottom: 4rem;
+  margin-bottom: 3.625rem;
 }
 
 .grey-text {
@@ -370,11 +371,14 @@ footer {
   width: 17.5rem;
   height: 14.813rem;
 }
-/*********cards overlaping grey & yellow main-box******************/
+
+/*********card-box overlaping grey & yellow main-box******************/
 .card-box {
   display:flex;
   justify-content: center;
   align-items: center;
+  margin-top: 7.063rem;
+  gap: 1.688rem;
 }
  /******Child-card*********************/
 .card {  
@@ -385,19 +389,20 @@ footer {
   flex-direction: column;
   align-items: center;
   border-radius: 0.25rem;
-  margin-bottom: -37.5rem;
   z-index: 1;
+  
 }
 
 .card-header {
+  margin-top: 1.438rem;
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 700;
   text-align: center;
-  padding: 0.5rem;
 }
 
 .card-text {
+  margin-top: 0.813rem;
   font-size: 0.688rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -464,24 +469,30 @@ footer {
   background-color: rgba(250, 177, 49, 1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items:center;
   
 }
 
 .about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11.688rem;
   font-size: 2.813rem;
   font-weight: 900;
   width: 19.625rem;
   height: 6.313rem;
+  
 }
 
 .orange-text {
-  font-size: 14px;
-  line-height: 20px;
+  margin-top: 0.688rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
-  color:#000000;
-  width: 442px;
-  height: 280px;
+  color:rgba(0, 0, 0, 0.6);
+  width: 27.625rem;
+  height:17.5rem;
+  text-align: center;
 }
 
