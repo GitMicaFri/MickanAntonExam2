@@ -1,6 +1,5 @@
 /* Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Frank+Ruhl+Libre:wght@900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700;800;900&family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap");
 :root {
   --baseFont: "Fira Sans";
   --headerFont: "Frank Ruhl Libre";
@@ -10,6 +9,7 @@
   --orangeBackground: #f17949;
   --yellowBackground: #ffb939;
   --greyBackground: #a9a19e;
+  --fireyellowBackground: rgba(250, 177, 49, 1);
 }
 
 *,
@@ -136,7 +136,7 @@ header article:nth-child(n + 2) h2 {
   left: 6rem;
 }
 
-.bigHeaderbox a {
+.bigHeaderbox button {
   position: relative;
   top: 7.2rem;
 }
@@ -160,6 +160,11 @@ header article:nth-child(n + 2) h2 {
   line-height: 1.5rem;
   padding-top: 3.9rem;
   padding-left: 0.2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.bigHeaderbox span span {
+  color: white;
 }
 
 .btn-small {
@@ -213,6 +218,178 @@ ul li a {
   opacity: 100%;
 }
 
+/* Main-Area styling and positioning */
+
+.main-area {
+  display: grid;
+  grid-template-areas:
+    "gry gry gry gry gry gry"
+    "oran oran oran oran oran oran";
+}
+
+.grey {
+  grid-area: gry;
+  height: 38.25rem;
+  background-color: var(--greyBackground);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grey > p {
+  height: 14.8125rem;
+  width: 17.5rem;
+  margin-top: 6.438rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 6.438rem;
+}
+
+.wrapper > h2 {
+  width: 19.625rem;
+  height: 8.75rem;
+  font-size: 2.8125rem;
+  line-height: 2.8125rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 3.625rem;
+}
+
+.grey-text {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  width: 17.5rem;
+  height: 14.813rem;
+}
+
+/*********card-box overlaping grey & yellow main-box******************/
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.063rem;
+  gap: 1.688rem;
+}
+/******Card-alignments*********************/
+.card {
+  width: 16rem;
+  height: 19.25rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.25rem;
+  z-index: 1;
+  box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  margin-top: 1.438rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-text {
+  margin-top: 0.813rem;
+  font-size: 0.688rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  width: 13.375rem;
+  height: 6.75rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Child-card */
+.frame-blue {
+  width: 13.375rem;
+  height: 8.625rem;
+  background-color: var(--blueBackground);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.188rem;
+  margin-top: -1.625rem;
+  overflow-y: hidden;
+}
+
+.child {
+  height: 10.124rem;
+  width: 6.026rem;
+  margin-top: 0.751rem;
+}
+/******Just-right card*******/
+.frame-yellow {
+  width: 13.375rem;
+  height: 8.625rem;
+  background-color: var(--fireyellowBackground);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.188rem;
+  margin-top: -1.625rem;
+  overflow-y: hidden;
+}
+
+.adult {
+  height: 27.063rem;
+  width: 6.486rem;
+  margin-top: 0.751rem;
+}
+/******Oldfart card***************/
+.frame-orange {
+  width: 13.375rem;
+  height: 8.625rem;
+  background-color: var(--orangeBackground);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.188rem;
+  margin-top: -1.625rem;
+  overflow-y: hidden;
+}
+
+.old {
+  height: 22.756rem;
+  width: 8.348rem;
+  margin-top: 0.751rem;
+}
+
+.orange {
+  grid-area: oran;
+  height: 42.5rem;
+  background-color: var(--fireyellowBackground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11.688rem;
+  font-size: 2.813rem;
+  font-weight: 900;
+  width: 19.625rem;
+  height: 6.313rem;
+}
+
+.orange-text {
+  margin-top: 0.688rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  width: 27.625rem;
+  height: 17.5rem;
+  text-align: center;
+}
+
 /* How It Works - Section styling */
 
 .how-to-do {
@@ -240,7 +417,7 @@ ul li a {
 }
 
 .how-to-do section:nth-child(5) {
-  background-color: #f17949;
+  background-color: var(--orangeBackground);
 }
 
 .how-to-do section:nth-child(1) > h2 {
@@ -295,11 +472,11 @@ ul li a {
   position: absolute;
   height: 2rem;
   width: 2rem;
-  position: absolute;
   top: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .getUpBtn {
@@ -316,179 +493,10 @@ ul li a {
   font-size: 1.063rem;
   font-weight: 500;
   margin-top: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 footer {
   height: 21.25rem;
   background-color: #777574;
-}
-
-/***********Mickan*****************/
-.main-area {
-  display: grid;
-  grid-template-areas:
-    "grey grey grey grey grey grey"
-    "oran oran oran oran oran oran";
-}
-
-.grey {
-  grid-area: grey;
-  height: 38.25rem;
-  background-color: var(--greyBackground);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem;
-  justify-content: space-evenly;
-}
-
-.grey > p {
-  height: 14.8125rem;
-  width: 17.5rem;
-  margin-top: 6.438rem;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 6.438rem;
-}
-
-.wrapper > h2 {
-  width: 19.625rem;
-  height: 8.75rem;
-  font-size: 2.8125rem;
-  line-height: 2.8125rem;
-  letter-spacing: -0.02em;
-  margin-bottom: 3.625rem;
-}
-
-.grey-text {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
-  width: 17.5rem;
-  height: 14.813rem;
-}
-
-/*********card-box overlaping grey & yellow main-box******************/
-.card-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7.063rem;
-  gap: 1.688rem;
-}
-/******Child-card*********************/
-.card {
-  width: 16rem;
-  height: 19.25rem;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0.25rem;
-  z-index: 1;
-}
-
-.card-header {
-  margin-top: 1.438rem;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.card-text {
-  margin-top: 0.813rem;
-  font-size: 0.688rem;
-  line-height: 1.125rem;
-  font-weight: 700;
-  width: 13.375rem;
-  height: 6.75rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.frame-blue {
-  width: 13.375rem;
-  height: 8.625rem;
-  background-color: #c7ddea;
-  display: flex;
-  justify-content: center;
-  border-radius: 0.188rem;
-  margin-top: -1.625rem;
-  overflow-y: hidden;
-}
-
-.child {
-  height: 10.124rem;
-  width: 6.026rem;
-  margin-top: 0.751rem;
-}
-/******Just-right card*******/
-.frame-yellow {
-  width: 13.375rem;
-  height: 8.625rem;
-  background-color: rgba(250, 177, 49, 1);
-  display: flex;
-  justify-content: center;
-  border-radius: 0.188rem;
-  margin-top: -1.625rem;
-  overflow-y: hidden;
-}
-
-.adult {
-  height: 27.063rem;
-  width: 6.486rem;
-  margin-top: 0.751rem;
-}
-/******Oldfart card***************/
-.frame-orange {
-  width: 13.375rem;
-  height: 8.625rem;
-  background-color: rgba(241, 121, 73, 1);
-  display: flex;
-  justify-content: center;
-  border-radius: 0.188rem;
-  margin-top: -1.625rem;
-  overflow-y: hidden;
-}
-
-.old {
-  height: 22.756rem;
-  width: 8.348rem;
-  margin-top: 0.751rem;
-}
-
-.orange {
-  grid-area: oran;
-  height: 42.5rem;
-  background-color: rgba(250, 177, 49, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-us {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 11.688rem;
-  font-size: 2.813rem;
-  font-weight: 900;
-  width: 19.625rem;
-  height: 6.313rem;
-}
-
-.orange-text {
-  margin-top: 0.688rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
-  width: 27.625rem;
-  height: 17.5rem;
-  text-align: center;
 }
