@@ -371,11 +371,10 @@ footer {
   height: 14.813rem;
 }
 /*********cards overlaping grey & yellow main-box******************/
-.card-grid-box {
-  display: grid;
-  grid-template-columns: 3fr;
-  column-span: 1 / 3;
-  column-gap: 3rem;;
+.card-box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
  /******Child-card*********************/
 .card {  
@@ -445,7 +444,7 @@ footer {
 .frame-orange {
   width: 13.375rem;
   height: 8.625rem;
-  background-color:#ffb939;
+  background-color:rgba(241, 121, 73, 1);
   display: flex;
   justify-content: center;
   border-radius: 0.188rem;
