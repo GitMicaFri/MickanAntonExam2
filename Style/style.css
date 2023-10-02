@@ -1,6 +1,5 @@
 /* Utilities */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Fira+Sans:wght@700&family=Frank+Ruhl+Libre:wght@900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700;800;900&family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap");
 :root {
   --baseFont: "Fira Sans";
   --headerFont: "Frank Ruhl Libre";
@@ -142,6 +141,7 @@ header article:nth-child(n + 2) h2 {
   left: 6rem;
 }
 
+.bigHeaderbox button {
 .bigHeaderbox button {
   position: relative;
   top: 7.2rem;
@@ -462,11 +462,11 @@ figure.profileCard {
   position: absolute;
   height: 2rem;
   width: 2rem;
-  position: absolute;
   top: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .getUpBtn {
@@ -483,6 +483,7 @@ figure.profileCard {
   font-size: 1.063rem;
   font-weight: 500;
   margin-top: 1.2rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 footer {
