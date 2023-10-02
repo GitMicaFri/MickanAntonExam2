@@ -9,7 +9,7 @@
   --orangeBackground: #f17949;
   --yellowBackground: #ffb939;
   --greyBackground: #a9a19e;
-  --fireyellowBackground: #fab131;
+  --fireyellowBackground: rgba(250, 177, 49, 1);
 }
 
 *,
@@ -109,13 +109,6 @@ header > article:nth-child(3) {
   background-color: var(--yellowBackground);
 }
 
-header article:nth-child(n + 2) > * {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 header article:nth-child(n + 2) p {
   color: rgba(0, 0, 0, 0.5);
   line-height: auto;
@@ -123,12 +116,14 @@ header article:nth-child(n + 2) p {
   font-size: 0.688rem;
   width: 15.625rem;
   height: 1.063rem;
+  text-align: center;
 }
 
 header article:nth-child(n + 2) h2 {
   font-size: 2rem;
   letter-spacing: -0.02em;
   width: 15.625rem;
+  text-align: center;
   line-height: 2.463rem;
   height: 2.563rem;
 }
@@ -141,7 +136,6 @@ header article:nth-child(n + 2) h2 {
   left: 6rem;
 }
 
-.bigHeaderbox button {
 .bigHeaderbox button {
   position: relative;
   top: 7.2rem;
@@ -170,7 +164,7 @@ header article:nth-child(n + 2) h2 {
 }
 
 .bigHeaderbox span span {
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 
 .btn-small {
@@ -181,11 +175,11 @@ header article:nth-child(n + 2) h2 {
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.btn-small span {
+.btn-small > span {
   font-family: var(--baseFont);
   font-size: 0.625rem;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 700;
+  font-weight: 900;
 }
 
 /* Navbar topside-page */
@@ -224,29 +218,35 @@ ul li a {
   opacity: 100%;
 }
 
-/* Main-Area */
+/* Main-Area styling and positioning */
+
 .main-area {
   display: grid;
   grid-template-areas:
-    "grey grey grey grey grey grey"
+    "gry gry gry gry gry gry"
     "oran oran oran oran oran oran";
 }
 
 .grey {
-  grid-area: grey;
+  grid-area: gry;
   height: 38.25rem;
   background-color: var(--greyBackground);
   display: flex;
-  padding: 6.4375rem 6.6875rem;
   flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
+  justify-content: space-evenly;
+}
+
+.grey > p {
+  height: 14.8125rem;
+  width: 17.5rem;
+  margin-top: 6.438rem;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 6.438rem;
 }
 
 .wrapper > h2 {
@@ -263,121 +263,131 @@ ul li a {
   line-height: 1.5rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
-  height: 14.8125rem;
   width: 17.5rem;
+  height: 14.813rem;
 }
 
-.pictureFrame {
-  margin-top: 7.0625rem;
+/*********card-box overlaping grey & yellow main-box******************/
+.card-box {
   display: flex;
-  gap: 1.6875rem;
   justify-content: center;
+  align-items: center;
+  margin-top: 7.063rem;
+  gap: 1.688rem;
 }
-figure.profileCard {
-  height: 19.25rem;
+/******Card-alignments*********************/
+.card {
   width: 16rem;
+  height: 19.25rem;
   background-color: white;
-  border-radius: 0.3125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  z-index: 1;
+  box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.1);
 }
 
-.picBackground {
-  width: 14.75rem;
-  height: 9.375rem;
-  border-radius: 0.25rem;
-  overflow-y: hidden;
-  position: relative;
-  margin-top: -1.625rem;
+.card-header {
+  margin-top: 1.438rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-text {
+  margin-top: 0.813rem;
+  font-size: 0.688rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  width: 13.375rem;
+  height: 6.75rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Child-card */
+.frame-blue {
+  width: 13.375rem;
+  height: 8.625rem;
+  background-color: var(--blueBackground);
   display: flex;
   justify-content: center;
+  border-radius: 0.188rem;
+  margin-top: -1.625rem;
+  overflow-y: hidden;
 }
 
-.picBackground.child {
-  background-color: var(--blueBackground);
+.child {
+  height: 10.124rem;
+  width: 6.026rem;
+  margin-top: 0.751rem;
 }
-
-.profilePic.child {
-  margin-top: 0.688125rem;
-  width: 6.02625rem;
-  height: 10.124375rem;
-}
-
-.picBackground.adult {
-  background-color: var(--fireyellowBackground);
-}
-
-.profilePic.adult {
-  margin-top: 0.875rem;
-  width: 6.485625rem;
-  height: 27.0625rem;
-}
-
-.picBackground.old {
-  background-color: var(--orangeBackground);
-}
-
-.profilePic.old {
-  margin-top: 1.5rem;
-  width: 8.3475rem;
-  height: 22.13125rem;
-}
-
-.profileCard figcaption h4 {
-  width: 12.375rem;
-  height: 0.8125rem;
-  color: rgba(0, 0, 0, 0.9);
-  line-height: 1.25rem;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 1.4375rem;
-}
-.profileCard figcaption p {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  line-height: 1.125rem;
-  text-align: center;
-  height: 6.75rem;
+/******Just-right card*******/
+.frame-yellow {
   width: 13.375rem;
-  color: rgba(0, 0, 0, 0.4);
-  margin-top: 0.8125rem;
+  height: 8.625rem;
+  background-color: var(--fireyellowBackground);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.188rem;
+  margin-top: -1.625rem;
+  overflow-y: hidden;
+}
+
+.adult {
+  height: 27.063rem;
+  width: 6.486rem;
+  margin-top: 0.751rem;
+}
+/******Oldfart card***************/
+.frame-orange {
+  width: 13.375rem;
+  height: 8.625rem;
+  background-color: var(--orangeBackground);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.188rem;
+  margin-top: -1.625rem;
+  overflow-y: hidden;
+}
+
+.old {
+  height: 22.756rem;
+  width: 8.348rem;
+  margin-top: 0.751rem;
 }
 
 .orange {
   grid-area: oran;
-  height: 38.25rem;
+  height: 42.5rem;
   background-color: var(--fireyellowBackground);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.orange h2 {
+.about-us {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 11.6875rem;
-  width: 19.625rem;
-  height: 6.3125rem;
-  font-size: 2.8125rem;
-  line-height: 2.8125rem;
-  letter-spacing: -0.02em;
-  text-align: center;
+  margin-top: 11.688rem;
+  font-size: 2.813rem;
   font-weight: 900;
+  width: 19.625rem;
+  height: 6.313rem;
 }
 
-.orange p {
-  margin-top: 0.6875rem;
-  width: 27.625rem;
-  height: 17.5rem;
+.orange-text {
+  margin-top: 0.688rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
-  text-align: center;
   color: rgba(0, 0, 0, 0.6);
+  width: 27.625rem;
+  height: 17.5rem;
+  text-align: center;
 }
 
 /* How It Works - Section styling */
